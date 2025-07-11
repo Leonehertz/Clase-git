@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #58595B; /* Color de texto principal (Gris oscuro del logo) */
+}
+
+/* Paleta de colores de Squall Market */
+:root {
+    --primary-orange: #F36621;
+    --dark-gray: #58595B;
+}
+
+/* Clase para el texto con el color primario (naranja) */
+.text-primary, a.text-primary {
+    color: var(--primary-orange) !important;
+}
+a.text-primary:hover {
+    color: #d9530c !important; /* Naranja más oscuro al pasar el mouse */
+}
+.border-primary {
+    border-color: var(--primary-orange) !important;
+}
+.font-weight-bold.text-primary {
+    color: var(--primary-orange) !important;
+}
+
+/* Estilos para el Botón Primario (naranja) */
+.btn-primary {
+    color: #fff !important; 
+    background-color: var(--primary-orange);
+    border-color: var(--primary-orange);
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.btn-primary:hover {
+    background-color: #d9530c; 
+    border-color: #c94a0b;
+}
+
+/* Sombra para mejorar la legibilidad del texto en el carrusel */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Efecto de hover para las tarjetas de productos */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e9ecef; /* Borde sutil y claro */
+}
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* Ajustes para la Navbar Oscura */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.75);
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: var(--primary-orange);
+}
